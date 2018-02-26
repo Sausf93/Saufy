@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>SauFy</title>
+</head>
+
+<body>
+    <div class="contenedor">
+        <div class="header">
+            <div class="header-titulo"> SauFy</div>
+        </div>
+        <div class="body-left">
+            <div class="reproductor">
+                <video id="reproducir">
+                    <code>video</code>.
+                </video>
+            </div>
+            <div class="botones">
+                <i class="fas fa-step-backward icon-rep" onclick="anterior()"></i>
+                <i class="fas fa-backward icon-rep" onclick="retroceder()"></i>
+                <i class="fas fa-play icon-rep" onclick="play()"></i>
+                <i class="fas fa-pause icon-rep" onclick="pause()"></i>
+                <i class="fas fa-forward icon-rep" onclick="adelantar()"></i>
+                <i class="fas fa-step-forward icon-rep" onclick="siguiente()"></i>
+                <i class="fas fa-volume-up icon-rep-volume"></i>
+                <i class="fas fa-plus icon-mas" onclick="volmas()"></i>
+                <i class="fas fa-minus icon-menos" onclick="volmenos()"></i>
+            </div>
+        </div>
+        <div class="body-right">
+            <div class="tituloLista">
+                Lista
+            </div>
+            <div class="contenedor-canciones">
+            </div>
+        </div>
+        <footer>
+            <img src="../Proyecto musica-Saulo/resources/img/by.svg">
+        </footer>
+    </div>
+    <script src="js/app.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+</body>
+</html>

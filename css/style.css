@@ -1,0 +1,195 @@
+* {
+    box-sizing: border-box;
+    font-family: "Arial";
+    overflow: hidden;
+}
+
+body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    overflow-y: hidden;
+    background: #fcfff4;
+    background: -moz-linear-gradient(top, #403eb4 22%, #5355dd 42%, #736cd3 80%);
+    background: -webkit-linear-gradient(top,  #403eb4 22%, #5355dd 42%, #736cd3 80%);
+    background: linear-gradient(to bottom,  #403eb4 22%, #5355dd 42%, #736cd3 80%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfff4', endColorstr='#b3bead', GradientType=0);
+}
+
+.contenedor {
+    border: solid black 1px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.body-left {
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.contenedor-canciones{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    top: 10%;
+    left: 10%;;
+}
+
+.reproductor {
+    width: 80%;
+    height: 70%;
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#reproducir{
+    width: 80%;
+    height: 60%;
+}
+
+.botones {
+    width: 80%;
+    height: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.cancion {
+    border: solid black 1px;
+    width: 100%;
+    height: 10%;
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+    overflow-y:  hidden;
+    padding: 5px;
+}
+
+.footer {
+    border: solid black 1px;
+    height: 5vh;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-rep {
+    margin-right: 5%;
+    font-size: 2em;
+    transition: color 0.5s ease;
+    color: black;
+    cursor: pointer;
+}
+
+
+
+.icon-header-user:hover,
+.icon-rep:hover,
+.icon-menos:hover,
+.icon-mas:hover,
+.cancion:hover {
+    color: rgb(238, 255, 0);
+    transform: scale(1.1);
+    
+}
+
+.icon-rep-volume {
+    margin-left: 8%;
+    margin-right: 2%;
+    font-size: 2em;
+    color: rgb(30, 41, 104);
+}
+
+.header {
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size: 1.5em;
+}
+footer{
+    position: absolute;
+    bottom: 0px;
+    left: 47%;
+}
+
+.icon-header-user {
+    position: absolute;
+    transition: color 0.5s ease;
+    cursor: pointer;
+    left: 92%;
+    font-size: 1.5em;
+}
+
+.header-titulo {
+    font-size: 40px;
+    margin: 0 auto;
+    text-transform: uppercase;
+}
+
+
+.tituloLista {
+    font-size: 2em;
+    margin-top: 5px;
+}
+
+.isNotPlaying {
+    display: none;
+}
+#reproducir{
+    margin-top: 20px;
+    max-width: 70%;
+    max-height: 580px;
+}
+@media screen and (max-width: 550px) {
+    body{
+        overflow-y: scroll;
+    }
+    .body-left {
+        height: 85vh;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+    }
+    .body-right {
+        width: 100%;
+    }
+    .botones {
+        width: 60%;
+        height: 10%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer {
+        border: solid black 1px;
+        height: 12vh;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+}
